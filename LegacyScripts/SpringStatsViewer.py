@@ -21,7 +21,7 @@
 #
 # For a copy of the GNU General Public License see <http://www.gnu.org/licenses/>.
 #
-import Tix
+import Tkinter as Tix
 import tkFileDialog
 import tkMessageBox
 import SpringDemoFile
@@ -2484,7 +2484,8 @@ if __name__ == '__main__':
     root = Tix.Tk()
     app = Application(master=root)
     if len(sys.argv) > 1:
-        app.openfile(sys.argv[1])
+        app.openfile(r"/Users/delinmu/Documents/GitLab/beyond-all-reason-data-analytics/SampleReplays/2025-03-19_22-41-45-562_All That Glitters v2_2025.01.6.sdfz"
+)
     app.mainloop()
     if not app.isdestroyed():
         root.destroy()
